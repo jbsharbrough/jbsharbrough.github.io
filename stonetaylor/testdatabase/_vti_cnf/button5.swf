@@ -1,0 +1,10 @@
+vti_encoding:SR|utf8-nl
+vti_timelastmodified:TR|09 Oct 2001 16:11:00 -0000
+vti_extenderversion:SR|4.0.2.3406
+vti_syncwith_www.stonetaylor.com\:80:TR|09 Oct 2001 16:11:00 -0000
+vti_syncwith_207.36.84.54\:80:TR|09 Oct 2001 16:11:00 -0000
+vti_syncwith_www.stonetaylor.com\:80/oldst:TR|09 Oct 2001 16:11:00 -0000
+vti_syncwith_www.sharbrough.net\:80:TW|09 Oct 2001 16:11:00 -0000
+vti_author:SR|WEB\\bsharbrough
+vti_modifiedby:SR|WEB\\bsharbrough
+vti_timecreated:TR|09 Oct 2001 16:11:00 -0000

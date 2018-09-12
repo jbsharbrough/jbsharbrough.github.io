@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Michaels Stores EDI Followup 2002</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<h2><b>Michael's Stores, EDI Followup, 2002.</b> </h2>
+<p>Electronic Data Interchange, EDI, is a method of exchanging documents between
+computer systems. Michaels uses this method with some of their vendors. The EDI
+project manager at the Accounts Payable Center (APC) asked me to help organize
+information about which vendor invoices were being received, and which were
+being rejected, and why. The resulting MS Access application took Excel files as
+input, updated an Access database, and sent emails to the EDI vendors
+summarizing each day's activity.</p>
+<p>Statistical summaries were then produced that identified the reject rates and
+types, so that APC staff could work effectively with vendors to reduce rejects.</p>
+<p><b>Biggest business challenge</b>: this was a simple project from a business
+standpoint. Once the vendors began to receive emails, they contacted the EDI
+staff with questions. The increased activity level required an adjustment period
+for them. Beyond that hiccup, some vendors wondered why they were receiving the
+information, or what the information meant. In each case, the final result was
+better communication with vendors, and better followup by the APC.</p>
+<p><b>Biggest technical challenge</b>: well, the email routine was a good coding
+project. It included detail information for each vendor about that day's
+production. It was also interesting to make written reports with fixed formats
+for a varying number of error types - I eventually made a &quot;Top 5&quot;
+format that featured six columns of data - the five most used reject rates for
+the period being summarized, and a sixth column of &quot;Other&quot; that
+included the rest of the work. There was another technical challenge to make
+each process restartable - that required a number of tables that contained flags
+which could be cleared in order to regenerate any missing stats..</p>
+<p><b>Buzzwords</b>: MS Access development, workflow, Excel integration,
+Netscape MAPI</p>
+<p></p>
+</body>
+</html>

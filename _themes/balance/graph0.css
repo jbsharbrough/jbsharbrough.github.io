@@ -1,0 +1,71 @@
+.mstheme
+{
+	nav-banner-image: url(balbanr.gif);
+	separator-image: url(balrule.gif);
+	list-image-1: url(balbul1.gif);
+	list-image-2: url(balbul2.gif);
+	list-image-3: url(balbul3.gif);
+	navbutton-horiz-pushed: url(balhsel.gif);
+	navbutton-horiz-normal: url(balhbtn.gif);
+	navbutton-vert-pushed: url(balvsel.gif);
+	navbutton-vert-normal: url(balvbtn.gif);
+	navbutton-home-normal: url(balhom.gif);
+	navbutton-up-normal: url(balup.gif);
+	navbutton-prev-normal: url(balbck.gif);
+	navbutton-next-normal: url(balnxt.gif);
+}
+.mstheme-bannertxt
+{
+	font-family: Garamond, "Times New Roman", Times;
+	font-size: 6;
+	vertical-align: top;
+	color: rgb(255,255,255);
+}
+.mstheme-horiz-navtxt
+{
+	font-family: "Trebuchet MS", Arial, Helvetica;
+	font-size: 2;
+	color: rgb(255,255,255);
+}
+.mstheme-vert-navtxt
+{
+	font-family: "Trebuchet MS", Arial, Helvetica;
+	font-size: 2;
+	color: rgb(255,255,255);
+}
+.mstheme-navtxthome
+{
+	font-family: "Trebuchet MS", Arial, Helvetica;
+	font-size: 1;
+	color: rgb(255,255,255);
+}
+.mstheme-navtxtup
+{
+	font-family: "Trebuchet MS", Arial, Helvetica;
+	font-size: 1;
+	color: rgb(255,255,255);
+}
+.mstheme-navtxtprev
+{
+	font-family: "Trebuchet MS", Arial, Helvetica;
+	font-size: 1;
+	color: rgb(255,255,255);
+}
+.mstheme-navtxtnext
+{
+	font-family: "Trebuchet MS", Arial, Helvetica;
+	font-size: 1;
+	color: rgb(255,255,255);
+}
+UL
+{
+	list-style-image:url(balbul1.gif);
+}
+UL UL
+{
+	list-style-image:url(balbul2.gif);
+}
+UL UL UL
+{
+	list-style-image:url(balbul3.gif);
+}

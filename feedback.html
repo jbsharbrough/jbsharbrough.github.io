@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>My Mail Form</title>
+</head>
+<body bgcolor=#ffffff text="#000000">
+
+<center>
+<form method=POST action="/cgi-bin/mailform">
+<input type=hidden name="recipient" value="test@sharbrough.net">
+<input type=hidden name="env_report" value="REMOTE_HOST,HTTP_USER_AGENT">
+<input type=hidden name="bgcolor" value="#ffffff">
+<input type=hidden name="text_color" value="#000000">
+<input type=hidden name="return_link_url" value="http://sharbrough.net">
+<input type=hidden name="return_link_title" value="Back to My Page">
+
+<table border=5>
+<tr>
+<td>Name:</td><td><input name="Realname" type="text" rows=1 size="37"></td>
+</tr>
+<tr>
+<td>Email:</td><td><input name="Email" type="text" rows=1 size="37"></td>
+</tr>
+<tr>
+<td>Subject:</td><td><select name="Subject">
+<OPTION>Comment
+<OPTION>Question
+<OPTION>Complaint
+</SELECT>
+</td>
+</tr>
+<tr>
+<td>Home Page:</td>
+<td><input name="Home Page" type="text" rows=1 value="http://" 
+size="37"></td>
+</tr>
+</table>
+
+<p>
+
+<font size="+1"><strong>Enter Your Message Here:</strong></font>
+<p>
+<table border=5>
+<tr>
+<td><textarea name="Message" rows=10 cols=80 size="800"></textarea></td>
+</tr>
+</table>
+
+<p>
+<input type="Submit" value="Submit"> <input type="Reset">
+
+</form>
+</center>
+</body>
+</html>

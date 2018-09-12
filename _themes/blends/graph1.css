@@ -1,0 +1,83 @@
+.mstheme
+{
+	nav-banner-image: url(blebanna.gif);
+	separator-image: url(blesepa.gif);
+	list-image-1: url(blebul1a.gif);
+	list-image-2: url(blebul2a.gif);
+	list-image-3: url(blebul3a.gif);
+	navbutton-horiz-pushed: url(blenavhs.gif);
+	navbutton-horiz-normal: url(blenavha.gif);
+	navbutton-horiz-hovered: url(blenavhh.gif);
+	navbutton-vert-pushed: url(blenavvs.gif);
+	navbutton-vert-normal: url(blenavva.gif);
+	navbutton-vert-hovered: url(blenavvh.gif);
+	navbutton-home-normal: url(blehomea.gif);
+	navbutton-home-hovered: url(blehomeh.gif);
+	navbutton-home-pushed: url(blehomep.gif);
+	navbutton-up-normal: url(bleupa.gif);
+	navbutton-up-hovered: url(bleuph.gif);
+	navbutton-up-pushed: url(bleupp.gif);
+	navbutton-prev-normal: url(blebacka.gif);
+	navbutton-prev-hovered: url(blebackh.gif);
+	navbutton-prev-pushed: url(blebackp.gif);
+	navbutton-next-normal: url(blenexta.gif);
+	navbutton-next-hovered: url(blenexth.gif);
+	navbutton-next-pushed: url(blenextp.gif);
+}
+.mstheme-bannertxt
+{
+	font-family: "Trebuchet MS", Arial, Helvetica;
+	font-size: 6;
+	color: rgb(255,204,0);
+}
+.mstheme-horiz-navtxt
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 2;
+	font-weight: bold;
+	color: rgb(0,0,0);
+}
+.mstheme-vert-navtxt
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 2;
+	font-weight: bold;
+	text-align: right;
+	color: rgb(0,0,0);
+}
+.mstheme-navtxthome
+{
+	font-family: "Trebuchet MS", Arial, Helvetica;
+	font-size: 1;
+	color: rgb(255,204,0);
+}
+.mstheme-navtxtup
+{
+	font-family: "Trebuchet MS", Arial, Helvetica;
+	font-size: 1;
+	color: rgb(255,204,0);
+}
+.mstheme-navtxtprev
+{
+	font-family: "Trebuchet MS", Arial, Helvetica;
+	font-size: 1;
+	color: rgb(255,204,0);
+}
+.mstheme-navtxtnext
+{
+	font-family: "Trebuchet MS", Arial, Helvetica;
+	font-size: 1;
+	color: rgb(255,204,0);
+}
+UL
+{ 
+	list-style-image: url(blebul1a.gif);
+}
+UL UL
+{
+	list-style-image: url(blebul2a.gif);
+}
+UL UL UL
+{
+	list-style-image: url(blebul3a.gif);
+}

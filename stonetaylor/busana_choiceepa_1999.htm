@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Choice - EPA - 1999</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<h2><b>Choice Homes, EPA, 1999. </b></h2>
+<p>The EPA requires that an SWPPP form be filled out for every house that is in 
+  process every 14 days, unless it rains more than 1/2&quot;, when a form must 
+  be filled out within 24 hours. A community manager asked me to work with a superintendent 
+  and automate this practice, because it took the man about 5 minutes per house 
+  for 100 houses every time it rained. I researched the problem by asking the 
+  EPA consultant about the data and forms required, then created a prototype and 
+  asked her to get the EPA's blessing. They were pleased to see the effort, and 
+  gave us the green light to try it.</p>
+<p><b>Biggest business challenge</b>: the client did not want to pay for
+development. We agreed that I would develop the application at my own expense,
+and that any community manager who wanted to use it would pay me a setup fee. It was 
+  somewhat difficult to adapt the application to other communities, when they 
+  used different general ledger codes for certain phases of production.</p>
+<p><b>Biggest technical challenge</b>: a one click inspection if nothing was found 
+  out of order. Data was imported from the corporate SQL server when houses were 
+  started and closed. The various steps in the manufacturing process that had 
+  to have dates documented were captured from the Accounts Payable transactions 
+  for the homes. It became clear that the application would have two parts - a
+stand-alone database for keeping the required records and forms; and an optional
+front-end that would extract information from the client's proprietary database
+to reduce the amount of entry required by the superintendent.</p>
+<p><b>Buzzwords</b>: JAD, Workflow, SQL.</p>
+</body>
+</html>

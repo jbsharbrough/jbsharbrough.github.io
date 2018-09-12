@@ -1,0 +1,516 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List
+href="../Excel%20-%20Conditional%20Formatting_files/filelist.xml">
+<title>Conditional Formatting in Excel</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Beau Sharbrough</o:Author>
+  <o:LastAuthor>Beau Sharbrough</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>98</o:TotalTime>
+  <o:Created>2000-06-17T18:52:00Z</o:Created>
+  <o:LastSaved>2000-06-17T18:52:00Z</o:LastSaved>
+  <o:Pages>5</o:Pages>
+  <o:Words>1550</o:Words>
+  <o:Characters>8835</o:Characters>
+  <o:Company>GraCom Services, Inc</o:Company>
+  <o:Lines>73</o:Lines>
+  <o:Paragraphs>17</o:Paragraphs>
+  <o:CharactersWithSpaces>10850</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:TargetScreenSize>640x480</o:TargetScreenSize>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:14.0pt;
+	mso-bidi-font-weight:normal;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+h3
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	font-weight:normal;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:122971417;
+	mso-list-type:simple;
+	mso-list-template-ids:67698703;}
+@list l0:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:1358776464;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1>I<span style='font-weight:normal'>n</span>troduction</h1>
+
+<p class=MsoNormal>Conditional formatting in Excel can be used to present data
+in a way that improves the understanding of the meaning of the numbers.<span
+style="mso-spacerun: yes">  </span>In the examples below, we’ll turn good
+numbers blue and bad numbers red, and talk about the impact of that
+presentation.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The worksheet is named “MLB – Whos Hot Whos Not.xls”</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h3>Prerequisites: You will need to already know about …</h3>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo1;
+tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Cell and Range References (Relative and Absolute)<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo1;
+tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Named Ranges<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo1;
+tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Copying Formulas<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo1;
+tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Copying Formats<o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h3>Goals: You will learn about …</h3>
+
+<p class=MsoNormal>Conditional Formatting - Based on a constant, Based on a
+relative cell reference, and Based on an absolute cell reference.</p>
+
+<h1>C<span style='font-weight:normal'>e</span>ll and Range References</h1>
+
+<p class=MsoNormal>According to the Excel97 Help, </p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'>A reference identifies a cell or a
+range of cells on a worksheet and tells Microsoft Excel where to look for the
+values or data you want to use in a formula. With references, you can use data
+contained in different parts of a worksheet in one formula or use the value from
+one cell in several formulas. You can also refer to cells on other sheets in
+the same workbook, to other workbooks, and to data in other programs.
+References to cells in other workbooks are called external references.
+References to data in other programs are called remote references.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyTextIndent>By default, Microsoft Excel uses the A1 reference
+style, which labels columns with letters (A through IV, for a total of 256
+columns) and labels rows with numbers (1 through 65536). To refer to a cell,
+enter the column letter followed by the row number. For example, D50 refers to
+the cell at the intersection of column D and row 50. To refer to a range of
+cells, enter the reference for the cell in the upper-left corner of the range,
+a colon (:), and then the reference to the cell in the lower-right corner of
+the range. The following are examples of references.</p>
+
+<p class=MsoBodyTextIndent><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyTextIndent style='tab-stops:4.5in'><u>To refer to<span
+style='mso-tab-count:1'>                </span>Use<o:p></o:p></u></p>
+
+<p class=MsoBodyTextIndent style='tab-stops:4.5in'>The cell in column A and row
+10<span style='mso-tab-count:1'>                </span>A10</p>
+
+<p class=MsoBodyTextIndent style='tab-stops:4.5in'>The range of cells in column
+A and rows 10 through 20<span style='mso-tab-count:1'>                </span>A10:A20</p>
+
+<p class=MsoBodyTextIndent style='tab-stops:4.5in'>The range of cells in row 15
+and columns B through E<span style='mso-tab-count:1'>                </span>B15:E15</p>
+
+<p class=MsoBodyTextIndent style='tab-stops:4.5in'>All cells in row 5<span
+style='mso-tab-count:1'>                </span>5:5</p>
+
+<p class=MsoBodyTextIndent style='tab-stops:4.5in'>All cells in rows 5 through
+10<span style='mso-tab-count:1'>                </span>5:10</p>
+
+<p class=MsoBodyTextIndent style='tab-stops:4.5in'>All cells in column H<span
+style='mso-tab-count:1'>                </span>H:H</p>
+
+<p class=MsoBodyTextIndent style='tab-stops:4.5in'>All cells in columns H
+through J<span style='mso-tab-count:1'>                </span>H:J</p>
+
+<p class=MsoBodyTextIndent style='tab-stops:4.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h1>T<span style='font-weight:normal'>h</span>e difference between relative and
+absolute references</h1>
+
+<p class=MsoNormal>From the Excel97 Help:</p>
+
+<p class=MsoNormal style='margin-left:.5in'>When you create a formula,
+references to cells or ranges are usually based upon their position relative to
+the cell that contains the formula. For example, if cell B6 contains the
+formula =A5; Microsoft Excel finds the value one cell above and one cell to the
+left of B6. This is known as a relative referencing.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'>When you copy a formula that uses
+relative references, the references in the pasted formula update and refer to
+different cells relative to the position of the formula. For example, if the
+formula in cell B6 is copied to cell B7, then the formula in cell B7 will change
+to =A6, which refers to the cell that is one cell above and to the left of cell
+B7.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyTextIndent>If you don't want references to change when you copy
+a formula to a different cell, use an absolute reference. For example, if your
+formula multiples cell A5 with cell C1 (=A5*C1) and you copy the formula to
+another cell, both references will change. You can create an absolute reference
+to cell C1 by placing a dollar sign ($) before the parts of the reference that
+do not change. To create an absolute reference to cell C1, for example, add
+dollar signs to the formula as follows:</p>
+
+<p class=MsoNormal style='margin-left:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style="mso-spacerun:
+yes"> </span>=A5*$C$1</p>
+
+<h1>N<span style='font-weight:normal'>a</span>med Ranges</h1>
+
+<p class=MsoNormal>From Excel97 Help: A descriptive name in a formula can make
+it easier to understand the purpose of the formula. For example, the formula
+=SUM(FirstQuarterSales) might be easier to identify than =SUM(Sales!C20:C30).
+In this example, the name FirstQuarterSales represents the range C20:C30 on the
+worksheet named Sales.</p>
+
+<h1>C<span style='font-weight:normal'>o</span>pying Formulas</h1>
+
+<p class=MsoNormal>When you copy a formula, absolute cell references do not
+change; relative cell references will change.</p>
+
+<h1>C<span style='font-weight:normal'>o</span>pying Formats</h1>
+
+<p class=MsoNormal>The easiest way to copy cell formats is to use the Format
+Painter.<span style="mso-spacerun: yes">  </span>You can use this two ways.</p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .25in'><![if !supportLists]>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Select the cell or range containing the format you wish to
+copy.<span style="mso-spacerun: yes">  </span>Click on the format painter
+icon.<span style="mso-spacerun: yes">  </span>Then select the target area.<span
+style="mso-spacerun: yes">  </span>The copying will take place immediately.</p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .25in'><![if !supportLists]>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>If you wish to repeat the process, double-click the format
+painter icon, and then click it again a single time when you’re done.</p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .25in'><![if !supportLists]>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>You can also use Edit|Paste Special|Formats if you like to be
+old fashioned.</p>
+
+<h1>C<span style='font-weight:normal'>o</span>nditional Formatting</h1>
+
+<p class=MsoNormal>Select the cells you want to format.</p>
+
+<p class=MsoNormal>On the Format menu, click Conditional Formatting.</p>
+
+<p class=MsoNormal>To use values in the selected cells as the formatting
+criteria, click Cell Value Is, select the comparison phrase and then type a
+value in the appropriate box. You can enter a constant value or a formula; you
+must include an equal sign (=) before the formula. </p>
+
+<p class=MsoNormal>Click Format.</p>
+
+<p class=MsoNormal>Select the font style, font color, underlining, borders,
+shading, or patterns you want to apply.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Microsoft Excel applies the selected formats only if the
+cell value meets the condition or if the formula returns a value of TRUE.</p>
+
+<p class=MsoNormal>You can specify up to three conditions.</p>
+
+<p class=MsoNormal>If none of the specified conditions are true, the cells keep
+their existing formats. You can use the existing formats to identify a fourth
+condition.</p>
+
+<h2>Based on a constant</h2>
+
+<p class=MsoNormal>You can compare the cell value to a constant.<span
+style="mso-spacerun: yes">  </span>In the example worksheet, cell B13 will be
+blue if greater than or equal to 7, and red if less than or equal to three.<span
+style="mso-spacerun: yes">  </span>If both conditions fail, the cell will be
+black.</p>
+
+<h2>Based on a relative cell reference</h2>
+
+<p class=MsoNormal>You can compare the value of the cell to the value in
+another cell.<span style="mso-spacerun: yes">  </span>In the example, cell D13
+will be black, blue, or red based on its relative size compared to cell E13.</p>
+
+<h2>Based on an absolute cell reference</h2>
+
+<p class=MsoNormal>If you change the “cell value is” to “formula is” you can
+use any formula that you like.<span style="mso-spacerun: yes">  </span>In the
+example, cells H13 and I13 are colored blue or red based on the comparison of
+their ratio to that of a specific cell, $J$2.<span style="mso-spacerun: yes"> 
+</span>Notes:<span style="mso-spacerun: yes">  </span>You can use a Named Range
+in these formulas, and it might make them easier to read.<span
+style="mso-spacerun: yes">  </span>Also, you can use absolute and relative cell
+addresses, or Named Ranges whether you compare to the cell value or use “formula
+is.”</p>
+
+<h1>S<span style='font-weight:normal'>u</span>mmary</h1>
+
+<p class=MsoNormal>The process of using conditional formatting in Excel
+requires prior knowledge of cell reference and format copying.<span
+style="mso-spacerun: yes">  </span>The following is an example where we focus
+on the message, not the medium.</p>
+
+<h1>T<span style='font-weight:normal'>h</span>e American League, after about a
+month</h1>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>We will use the American League baseball results for May, 2000
+to exemplify some of these methods.</p>
+
+<p class=MsoNormal>First, look down to rows 2 thru 4 where the performance of
+the divisions is summarized.<span style="mso-spacerun: yes">  </span>For the
+East, Central, and West Divisions, you can see the won-lost results for the
+last 10 games, for the season, and for the season broken down by home and
+road.<span style="mso-spacerun: yes">  </span>The road won-lost percentage is
+calculated after that.</p>
+
+<h2>Last 10</h2>
+
+<p class=MsoNormal>By arbitrary definition, winning 7 or more of ten games is
+hot, winning 3 or less is not.<span style="mso-spacerun: yes"> 
+</span>Normally, the worst teams win 2 games out of 5, and the best teams win 3
+games out of 5.<span style="mso-spacerun: yes">  </span>The long baseball
+season is normally a six month campaign among evenly matched teams, where on
+any given day the worst team can beat the best team 13-1.<span
+style="mso-spacerun: yes">  </span>Success is defined in small increments.<span
+style="mso-spacerun: yes">  </span>In baseball, the gap between best and worst
+is summed in your performance every fifth day, and the gap between the average
+teams and the best is summed in your performance every tenth day.<span
+style="mso-spacerun: yes">  </span>This is a sport with a great premium on
+consistency.<span style="mso-spacerun: yes">  </span>If we graphed that
+performance, there would not be a great difference in the average weekly
+performance of the teams.<span style="mso-spacerun: yes">  </span>In our
+example, we make the teams that win 7 or more games blue, and the teams that
+win 3 or less red, and the teams that are performing within average ranges are
+black.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Using this yardstick, you can see at a glance who’s hot and
+who’s not.<span style="mso-spacerun: yes">  </span>The Blue Jays and White Sox
+are hot, and the Royals, Tigers, and Rangers are not.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The formulas for the formats for losses are just reversed.</p>
+
+<h2>Season</h2>
+
+<p class=MsoNormal>For the season, formatting is based on the same basic
+measure – teams winning more than 60% of the time are blue, teams losing more
+than 60% of the time are in red.<span style="mso-spacerun: yes">  </span>This
+calculation isn’t as simple – instead of comparing the cell value to a
+constant, we compare it to the value of another cell AND a constant.<span
+style="mso-spacerun: yes">  </span>In this case, wins are blue if they are
+greater than losses*1.5, and red if they are less than losses/1.5.<span
+style="mso-spacerun: yes">  </span>The 1.5 in the formula could by typed in an
+assumptions cell and referred to by absolute reference, and this would be a
+good thing to do if you wanted to move the numbers around and instantly see the
+difference.</p>
+
+<h2>Home</h2>
+
+<p class=MsoNormal>While home records are usually better than road records, the
+same formula has been used to calculate home performance as for the season.</p>
+
+<h2>Road</h2>
+
+<p class=MsoNormal>Road wins are harder to come by.<span style="mso-spacerun:
+yes">  </span>Normally, only the best teams win on the road.<span
+style="mso-spacerun: yes">  </span>As a result, the formulas for road
+performance are different from the formulas for the season.<span
+style="mso-spacerun: yes">  </span>If you win more than you lose on the road,
+you’re in the blue numbers.<span style="mso-spacerun: yes">  </span>If you win
+less than one out of three road games, you’ll be in the red.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>In the example, I’ve used a different approach for the AL
+East, using blue for above average win-loss percentage on the road within the
+division, and red for below.<span style="mso-spacerun: yes">  </span>There
+would only be black numbers if a team exactly hit the average.<span
+style="mso-spacerun: yes">  </span>Here’s an example of use of a Named Range in
+a formula.</p>
+
+<h1>P<span style='font-weight:normal'>u</span>tting it together</h1>
+
+<p class=MsoNormal>Using this method, you can see a few things clearly.<span
+style="mso-spacerun: yes">  </span>First, using shading instead of using font colors
+alone really brings out differences.<span style="mso-spacerun: yes"> 
+</span>Second, you can see a mixture of good and bad performance in some
+cases.<span style="mso-spacerun: yes">  </span>Identifying the areas where
+performance improvement is needed is a key portion of any Management By
+Exception approach.<span style="mso-spacerun: yes">  </span>So the White Sox
+are hot and the Tigers are not.<span style="mso-spacerun: yes">  </span>The
+twins are average in every way, and the Royals are winning at home and getting
+killed on the road.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Another point worth mentioning is that one month is not long
+enough to draw projections for a season in baseball.<span style="mso-spacerun:
+yes">  </span>It’s a good way to measure monthly performance, but it’s not wise
+to extrapolate these figures over a season without more information.<span
+style="mso-spacerun: yes">  </span>As a rule, the first 50 games tell you what
+kind of team you have, and then you address your weaknesses with the next
+50.<span style="mso-spacerun: yes">  </span>The last 50 are the sprint to the
+wire.<span style="mso-spacerun: yes">  </span>Baseball history is full of stories
+of teams that performed at unexceptional levels until August, and then buried
+the division.<span style="mso-spacerun: yes">  </span>The old Royals teams were
+a classic example of that.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>You might be able to think of ways that using 4 colors will
+help you communicate information hidden in your data.<span style="mso-spacerun:
+yes">  </span>Conditional formatting is just one of those ways – and anyone who
+has excel can use it.</p>
+
+<span style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal>Web page notes.<span style="mso-spacerun: yes">  </span>Make
+a link to download the worksheet, and pu the preliminary text and the final
+text in separate pages.<span style="mso-spacerun: yes">  </span>Finally, put a
+represenation of the worksheet in HTML format up there, too.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>

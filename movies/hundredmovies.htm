@@ -1,0 +1,684 @@
+<html>
+<head>
+<title>100 Movies</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  Alan Gruskoff (alan@performantsystems.com) -->
+<!-- Web Site:  http://www.performantsystems.com/ -->
+
+
+<!-- Begin
+function anyCheck(form) {
+var total = 0;
+var max = form.ckbox.length;
+for (var idx = 0; idx < max; idx++) {
+if (eval("document.playlist.ckbox[" + idx + "].checked") == true) {
+    total += 1;
+   }
+}
+alert("You checked " + total + " films.");
+}
+//  End -->
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="98%" border="0" cellpadding="2">
+  <tr> 
+    <td bgcolor="#990033" height="10" width="50%"><font color="#999933"><b><font size="+3">MOVIES</font> 
+      </b></font><br>
+    </td>
+    <td bgcolor="#000099" height="10"> 
+      <div align="right"><font color="#999933"><b> Beau Sharbrough 
+        <img src="../images/jbsrwavatar.jpg" width="55" height="64"></b></font></div>
+    </td>
+  </tr>
+  <tr> 
+    <td bgcolor="#CCCCCC" width="50%"><font size="5" color="#000099">Gross Revenues</font></td>
+    <td bgcolor="#999900"><font color="#000099">Top 10 lists</font></td>
+  </tr>
+</table>
+<h1><font color="#990033">A Hundred Movies</font></h1>
+<p><font color="#000099">The top 10 grossing films from each of the past ten years. How many have you seen? 
+Click the check boxes, then click on the button to count them up. You can change 
+your answers repeatedly, as long as you don't leave the page.</font></p>
+<form method="post" name=playlist>
+<font color="#000099">
+<input type=button value="Count Checkboxes" onClick="anyCheck(this.form)"></font>
+
+<table border="1">
+  <tr bgcolor="#333333"> 
+    <td><font color="#CCCCCC">Year</font></td>
+    <td><font color="#CCCCCC">Film</font></td>
+    <td><font color="#CCCCCC">Studio</font></td>
+    <td><font color="#CCCCCC">Gross</font></td>
+    <td><font color="#CCCCCC">Seen</font></td>
+  </tr>
+  <tr> 
+    <td rowspan="10" bgcolor="#CCCCCC"><font size="7" color="#000099">1992</font></td>
+    <td><font color="#990033">Aladdin</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Buena Vista</font></td>
+    <td><font color="#000099">$217,350,219 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Home Alone 2: Lost in New York</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Fox</font></td>
+    <td><font color="#000099">$173,585,516 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Batman Returns</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Warner Bros.</font></td>
+    <td><font color="#000099">$162,831,698 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Lethal Weapon 3</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Warner Bros.</font></td>
+    <td><font color="#000099">$144,731,527 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">A Few Good Men</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Columbia</font></td>
+    <td><font color="#000099">$141,340,176 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Sister Act</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Buena Vista</font></td>
+    <td><font color="#000099">$139,605,150 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Bodyguard</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Warner Bros.</font></td>
+    <td><font color="#000099">$121,936,132 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Wayne's World</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Paramount</font></td>
+    <td><font color="#000099">$121,697,323 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Basic Instinct</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Tri-Star</font></td>
+    <td><font color="#000099">$117,727,224 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">A League of Their Own
+      </font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Columbia</font></td>
+    <td><font color="#000099">$107,533,928 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td rowspan="10" bgcolor="#CCCCCC"><font size="7" color="#000099">1993</font></td>
+    <td><font color="#990033">Jurassic Park</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Universal</font></td>
+    <td><font color="#000099">$357,067,947 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Mrs. Doubtfire</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Fox</font></td>
+    <td><font color="#000099">$219,195,243 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Fugitive</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Warner Bros.</font></td>
+    <td><font color="#000099">$183,875,760 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Firm</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Paramount</font></td>
+    <td><font color="#000099">$158,340,292 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Sleepless in Seattle</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Tri-Star</font></td>
+    <td><font color="#000099">$126,680,880 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Indecent Proposal</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Paramount</font></td>
+    <td><font color="#000099">$106,614,059 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">In the Line of Fire</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Columbia</font></td>
+    <td><font color="#000099">$102,243,872 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Pelican Brief</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Warner Bros.</font></td>
+    <td><font color="#000099">$100,650,595 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Schindler's List</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Universal</font></td>
+    <td><font color="#000099">$96,065,768 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Cliffhanger</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Tri-Star</font></td>
+    <td><font color="#000099">$84,049,208 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td rowspan="10" bgcolor="#CCCCCC"><font size="7" color="#000099">1994</font></td>
+    <td><font color="#990033">Forrest Gump</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Paramount</font></td>
+    <td><font color="#000099">$329,694,499 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Lion King</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Buena Vista</font></td>
+    <td><font color="#000099">$312,855,561 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">True Lies</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Fox</font></td>
+    <td><font color="#000099">$146,282,411 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Santa Clause</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Buena Vista</font></td>
+    <td><font color="#000099">$144,833,357 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Dumb & Dumber</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">New Line</font></td>
+    <td><font color="#000099">$137,175,374 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Flintstones</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Universal</font></td>
+    <td><font color="#000099">$130,531,710 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Clear and Present Danger</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Paramount</font></td>
+    <td><font color="#000099">$122,012,656 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Speed</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Fox</font></td>
+    <td><font color="#000099">$121,248,145 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Mask</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">New Line</font></td>
+    <td><font color="#000099">$119,938,730 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Pulp Fiction</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Miramax</font></td>
+    <td><font color="#000099">$107,921,755 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td rowspan="10" bgcolor="#CCCCCC"><font size="7" color="#000099">1995</font></td>
+    <td><font color="#990033">Toy Story</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Buena Vista</font></td>
+    <td><font color="#000099">$191,780,865 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Batman Forever</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Warner Bros.</font></td>
+    <td><font color="#000099">$184,031,112 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Apollo 13</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Universal</font></td>
+    <td><font color="#000099">$172,060,755 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Pocahontas</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Buena Vista</font></td>
+    <td><font color="#000099">$141,579,773 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Ace Ventura: When Nature Calls</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Warner Bros.</font></td>
+    <td><font color="#000099">$108,344,348 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">GoldenEye</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">MGM</font></td>
+    <td><font color="#000099">$106,127,475 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Jumanji</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Sony/Tri-Star</font></td>
+    <td><font color="#000099">$100,458,310 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Casper</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Universal</font></td>
+    <td><font color="#000099">$100,280,070 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Seven</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">New Line</font></td>
+    <td><font color="#000099">$100,125,643 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Die Hard With a Vengeance</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Fox</font></td>
+    <td><font color="#000099">$100,012,499 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td rowspan="10" bgcolor="#CCCCCC"><font size="7" color="#000099">1996</font></td>
+    <td><font color="#990033">Independence Day</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Fox</font></td>
+    <td><font color="#000099">$306,169,255 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Twister</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Warner Bros.</font></td>
+    <td><font color="#000099">$241,708,908 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Mission: Impossible</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Paramount</font></td>
+    <td><font color="#000099">$180,981,856 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Jerry Maguire</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Sony/Tri-Star</font></td>
+    <td><font color="#000099">$153,952,592 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Ransom</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Buena Vista</font></td>
+    <td><font color="#000099">$136,492,681 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">101 Dalmatians</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Buena Vista</font></td>
+    <td><font color="#000099">$136,189,294 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Rock</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Buena Vista</font></td>
+    <td><font color="#000099">$134,069,511 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Nutty Professor</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Universal</font></td>
+    <td><font color="#000099">$128,794,050 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Birdcage</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">MGM</font></td>
+    <td><font color="#000099">$124,060,553 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">A Time to Kill</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Warner Bros.</font></td>
+    <td><font color="#000099">$108,766,007 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td rowspan="10" bgcolor="#CCCCCC"><font size="7" color="#000099">1997</font></td>
+    <td><font color="#990033">Titanic</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Paramount</font></td>
+    <td><font color="#000099">$600,788,188 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Men in Black</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Sony/Columbia</font></td>
+    <td><font color="#000099">$250,690,539 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Lost World</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Universal</font></td>
+    <td><font color="#000099">$229,086,679 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Liar Liar</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Universal</font></td>
+    <td><font color="#000099">$181,410,615 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Air Force One</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Sony/Columbia</font></td>
+    <td><font color="#000099">$172,956,409 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">As Good as It Gets</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Sony/Tri-Star</font></td>
+    <td><font color="#000099">$148,478,011 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Good Will Hunting</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Miramax</font></td>
+    <td><font color="#000099">$138,367,357 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Star Wars: Special Edition</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Fox</font></td>
+    <td><font color="#000099">$138,247,327 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">My Best Friend's Wedding</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Sony/Tri-Star</font></td>
+    <td><font color="#000099">$127,120,029 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Tomorrow Never Dies</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">MGM</font></td>
+    <td><font color="#000099">$125,234,939 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td rowspan="10" bgcolor="#CCCCCC"><font size="7" color="#000099">1998</font></td>
+    <td><font color="#990033">Saving Private Ryan</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">DreamWorks</font></td>
+    <td><font color="#000099">$216,173,322 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Armageddon</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Buena Vista</font></td>
+    <td><font color="#000099">$201,578,182 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">There's Something About Mary</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Fox</font></td>
+    <td><font color="#000099">$176,484,651 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">A Bug's Life</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Buena Vista</font></td>
+    <td><font color="#000099">$162,798,565 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Waterboy</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Buena Vista</font></td>
+    <td><font color="#000099">$161,491,646 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Dr. Dolittle</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Fox</font></td>
+    <td><font color="#000099">$144,156,464 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Rush Hour</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">New Line</font></td>
+    <td><font color="#000099">$141,167,355 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Deep Impact</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Paramount</font></td>
+    <td><font color="#000099">$140,464,664 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Godzilla</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Sony/Tri-Star</font></td>
+    <td><font color="#000099">$136,314,294 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Patch Adams</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Universal</font></td>
+    <td><font color="#000099">$135,026,902 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td rowspan="10" bgcolor="#CCCCCC"><font size="7" color="#000099">1999</font></td>
+    <td><font color="#990033">Star Wars: Episode I — The Phantom Menace</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Fox</font></td>
+    <td><font color="#000099">$431,088,295 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Sixth Sense</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Buena Vista</font></td>
+    <td><font color="#000099">$293,476,912 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Toy Story 2</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Buena Vista</font></td>
+    <td><font color="#000099">$244,579,370 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Austin Powers: The Spy Who Shagged Me</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">New Line</font></td>
+    <td><font color="#000099">$205,444,716 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Matrix</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Warner Bros.</font></td>
+    <td><font color="#000099">$171,414,892 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Tarzan</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Buena Vista</font></td>
+    <td><font color="#000099">$171,085,177 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Big Daddy</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Sony</font></td>
+    <td><font color="#000099">$163,479,795 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Mummy</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Universal</font></td>
+    <td><font color="#000099">$155,270,725 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Runaway Bride</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Paramount</font></td>
+    <td><font color="#000099">$152,149,590 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Blair Witch Project</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Artisan</font></td>
+    <td><font color="#000099">$140,539,099 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td rowspan="10" bgcolor="#CCCCCC"><font size="7" color="#000099">2000</font></td>
+    <td><font color="#990033">Dr. Seuss' How the Grinch Stole Christmas</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Universal</font></td>
+    <td><font color="#000099">$260,031,035 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Cast Away</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Fox</font></td>
+    <td><font color="#000099">$233,632,142 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Mission: Impossible 2</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Paramount</font></td>
+    <td><font color="#000099">$215,409,889 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Gladiator</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Dreamworks</font></td>
+    <td><font color="#000099">$187,683,805 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">What Women Want</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Paramount</font></td>
+    <td><font color="#000099">$182,805,123 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Perfect Storm</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Warner Bros.</font></td>
+    <td><font color="#000099">$182,618,434 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Meet the Parents</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Universal</font></td>
+    <td><font color="#000099">$166,225,040 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">X-Men</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Fox</font></td>
+    <td><font color="#000099">$157,299,717 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Scary Movie</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Miramax/Dimension</font></td>
+    <td><font color="#000099">$156,997,084 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">What Lies Beneath</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Dreamworks</font></td>
+    <td><font color="#000099">$155,464,351 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td rowspan="10" bgcolor="#CCCCCC"><font size="7" color="#000099">2001</font></td>
+    <td><font color="#990033">Harry Potter and the Sorcerer's Stone</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Warner Bros.</font></td>
+    <td><font color="#000099">$314,964,965 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Lord of the Rings: The Fellowship of the Ring</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">New Line</font></td>
+    <td><font color="#000099">$287,573,505 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Shrek</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Dreamworks</font></td>
+    <td><font color="#000099">$267,665,011 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Monsters, Inc.</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Buena Vista</font></td>
+    <td><font color="#000099">$252,338,340 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Rush Hour 2</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">New Line</font></td>
+    <td><font color="#000099">$226,164,286 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">The Mummy Returns</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Universal</font></td>
+    <td><font color="#000099">$202,007,640 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Pearl Harbor</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Buena Vista</font></td>
+    <td><font color="#000099">$198,539,855 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Ocean's 11</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Warner Bros.</font></td>
+    <td><font color="#000099">$181,856,578 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Jurassic Park III</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Universal</font></td>
+    <td><font color="#000099">$181,166,115 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  <tr> 
+    <td><font color="#990033">Planet of the Apes</font></td>
+    <td bgcolor="#999900"><font size="1" color="#CCCCCC">Fox</font></td>
+    <td><font color="#000099">$180,011,740 </font> </td>
+    <td><input type=checkbox name=ckbox value="ON"></td>
+  </tr>
+  </table>
+<p>
+<p><input type=button value="Count Checkboxes" onClick="anyCheck(this.form)">
+</form>
+
+<p>
+
+<p><font color="#000099">Under 50 - drive straight to Blockbuster. Do not pass 
+GO. <br>
+50 - Don't your friends tell you what's out there?<br>
+60 - You have a normal life.<br>
+70 - You might be watching some crap.<br>
+80 - You don't HAVE to watch the movies with your kids.<br>
+90 - You have a job as a professional film-watcher, right?</font> </p>
+</body>
+</html>
